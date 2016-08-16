@@ -3,15 +3,17 @@ app.config(function($routeProvider) {
     $routeProvider
 
       .when('/search/:search', {
-        templateUrl: 'home.html',
+        templateUrl: 'movies.html',
         controller: 'SearchController'
       })
       .when('/detail/:id', {
         templateUrl: 'detail.html',
         controller: 'DetailController'
       })
+      .when('/', {
+        templateUrl: 'home.html'
+      })
       .otherwise({
-        templateUrl: 'movie.html',
-        controller: 'HomeController'
+        templateUrl: 'error.html'
       })
 });

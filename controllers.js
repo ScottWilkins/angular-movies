@@ -10,7 +10,7 @@ app.controller("HomeController",function($scope, $http) {
 
 app.controller('DetailController', function($scope, $routeParams, $http) {
   $scope.vw = {}
-    $http.get('http://www.omdbapi.com/?i='+$routeParams.id+'&r=json').then(function(result){
+    $http.get('http://www.omdbapi.com/?i='+$routeParams.id+'&plot=full&r=json').then(function(result){
         $scope.vw.plot = result.data.Plot;
         $scope.vw.poster = result.data.Poster;
         $scope.vw.released = result.data.Released;
