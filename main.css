@@ -1,3 +1,37 @@
+body {
+   color: #232;
+}
 .img-search {
   width: 100px;
+
+}
+.detail-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+
+}
+.movie-div {
+  border: solid 1px #888;
+  margin: 8px;
+  width: 40%;
+  display: flex;
+}
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  margin: 50px 0 50px 0;
+}
+.movies-container {
+  height: 100vh;
+  overflow: scroll;
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  margin: 10px
+}
+.img-big {
+  height: 70%
 }

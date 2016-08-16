@@ -3,16 +3,18 @@
 
 <head>
     <meta charset="utf-8">
-    <title>portfolio</title>
+    <title>OMDB Movies</title>
     <link rel="stylesheet" href="main.css" media="screen" title="no title" charset="utf-8">
 </head>
 
 <body>
-  <div ng-controller="HomeController">
-      Enter movie and hit enter:
+  <div>
+      <h1>OMDB Movie Search</h1>
+      <p>Enter a title and hit submit:</p>
       <input type="text" ng-model="text" name="text"/>
       <a ng-href="http://localhost:8000/#/search/{{text}}"><input type="button" value="Submit"/></a>
   </div>
+  <div class="line"></div>
 
   <div ng-view></div>
 
