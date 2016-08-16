@@ -6,6 +6,10 @@ app.config(function($routeProvider) {
         templateUrl: 'home.html',
         controller: 'SearchController'
       })
+      .when('/detail/:id', {
+        templateUrl: 'detail.html',
+        controller: 'DetailController'
+      })
       .otherwise({
         templateUrl: 'movie.html',
         controller: 'HomeController'
