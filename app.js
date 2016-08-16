@@ -1,5 +1,5 @@
 var app = angular.module("app", ['ngRoute']);
-app.config(function($routeProvider) {
+app.config(function($routeProvider, $locationProvider) {
     $routeProvider
 
       .when('/', {
@@ -10,4 +10,5 @@ app.config(function($routeProvider) {
         templateUrl: 'home.html',
         controller: 'HomeController'
       })
+      $locationProvider.html5Mode(true);
 });
