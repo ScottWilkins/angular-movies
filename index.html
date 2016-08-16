@@ -10,14 +10,15 @@
   <div ng-controller="HomeController">
       Enter movie and hit enter:
       <input type="text" ng-model="text" name="text"/>
-      <input type="button" ng-click="vw.search(text)" value="Submit"/>
+      <a ng-href="http://localhost:8000/#/search/{{text}}"><input type="button" value="Submit"/></a>
 
-    <p ng-repeat='result in vw.data'>
+    <!-- <p ng-repeat='result in vw.data'>
       {{result.Title}}
-    </p>
+    </p> -->
 
 
   </div>
+  <div ng-view></div>
 
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>

@@ -1,14 +1,13 @@
 var app = angular.module("app", ['ngRoute']);
-app.config(function($routeProvider, $locationProvider) {
+app.config(function($routeProvider) {
     $routeProvider
 
-      .when('/', {
+      .when('/search/:search', {
         templateUrl: 'home.html',
-        controller: 'HomeController'
+        controller: 'SearchController'
       })
       .otherwise({
-        templateUrl: 'home.html',
+        templateUrl: 'movie.html',
         controller: 'HomeController'
       })
-      $locationProvider.html5Mode(true);
 });
